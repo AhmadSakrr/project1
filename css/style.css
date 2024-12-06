@@ -1,0 +1,1377 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+p,h1,h2,h3
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header section -----------------------------------*/
+.header
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(195, 4, 4, 0.808);
+    position: fixed;
+    z-index: 5;
+}
+.header-list
+{
+    float: right;
+    margin: 10px;
+}
+.header-list li
+{
+    margin: 15px;
+    display: inline;
+}
+input
+{
+    width:250px;
+    height: 28px;
+    border-radius: 30px;
+    margin: 10px 7px;
+    border: none;
+
+}
+.header-icon
+{
+    float: left;
+    padding:17px 14px;
+    position: absolute;
+}
+.home-icon
+{
+    float: left;   
+    font-size: 25px; 
+    padding: 12px 15px;
+    color: rgb(248, 248, 248);
+}
+.header-link
+{
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    position: relative; 
+    padding-bottom:5px;
+}
+.header-link::after
+{
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: rgb(255, 255, 255); 
+    transition: 0.3s;
+
+}
+.header-link:hover::after
+{
+    width: 100%;
+}
+/* --------------------------------------------- */
+
+/* Home -------------------------- */
+.home
+{
+    height: 100vh;
+    background-image: url(../images/1351347.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-overlay
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+.home-content
+{
+    color: rgb(248, 248, 248);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+}
+.home-header
+{
+    font-size: 70px;
+    text-transform: capitalize;
+}
+.home-p
+{
+    margin:10px;
+    font-size: large;
+}
+.home-btn
+{
+    height: 60px;
+    width: 130px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+.home-btn2
+{
+    height: 60px;
+    width: 130px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(231, 13, 13);
+    color: rgb(248, 248, 248);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+.home-btn:hover,.home-btn2:hover
+{
+    opacity: 0.8;
+}
+
+/* About---------------------------------------- */
+
+h2
+{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40;
+    font-weight: 1000;
+    text-transform: capitalize;
+}
+.line
+{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(172, 9, 9);
+    margin: auto;
+    margin-top: 3px;
+}
+.about-parent
+{
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 100px;
+    height: 500px;
+}
+.about-1
+{
+    width: 340px;
+    height: 220px;
+    border: 2px solid black ;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+}
+.about-2
+{
+    width: 340px;
+    height: 220px;
+    border: 2px solid black ;
+    float: left;
+    margin:0px 100px;
+    border-radius: 10px;
+    position: relative;
+}
+.about-3
+{
+    width: 340px;
+    height: 220px;
+    border: 2px solid black ;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+}
+.p-about
+{
+    font-size:25px;
+    font-weight: bold;
+    text-transform: initial;
+    margin-top: 10px;
+}
+.p-about2
+{
+    font-size:15px;
+    margin: 10px 0px;
+    font-weight: bold;
+    color: rgb(40, 39, 39);
+    padding: 0 10px;
+}
+.about-icon
+{
+    font-size: 40px;
+    color: rgb(197, 6, 6);
+    margin-top: 10px;
+}
+.about-link
+{
+    text-decoration: none;
+    color:rgb(197, 6, 6);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-1:after
+{
+    border-radius: 10px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color:rgb(129, 0, 0) ;
+    position: absolute;   
+    opacity: 1;
+    z-index: -1;
+}
+.about-1:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.about-1:hover .about-icon
+{
+    color:rgb(0, 0, 0);
+    font-size: 45px;
+}
+.about-1:hover .p-about
+{
+    font-size: 27px;
+    color: white;
+}
+.about-1:hover .p-about2
+{
+    color: rgb(255, 255, 255);
+}
+.about-1:hover .about-link
+{
+    color: rgb(0, 0, 0);
+}
+.about-2:after
+{
+    border-radius: 10px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color:rgb(129, 0, 0) ;
+    position: absolute;   
+    opacity: 1;
+    z-index: -1;
+}
+.about-2:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.about-2:hover .about-icon
+{
+    color:rgb(0, 0, 0);
+    font-size: 45px;
+}
+.about-2:hover .p-about
+{
+    font-size: 27px;
+    color: white;
+}
+.about-2:hover .p-about2
+{
+    color: rgb(255, 255, 255);
+}
+.about-2:hover .about-link
+{
+    color: rgb(0, 0, 0);
+}
+.about-3:after
+{
+    border-radius: 10px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    background-color:rgb(129, 0, 0) ;
+    position: absolute;   
+    opacity: 1;
+    z-index: -1;
+}
+.about-3:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.about-3:hover .about-icon
+{
+    color:rgb(0, 0, 0);
+    font-size: 45px;
+}
+.about-3:hover .p-about
+{
+    font-size: 27px;
+    color: white;
+}
+.about-3:hover .p-about2
+{
+    color: rgb(255, 255, 255);
+}
+.about-3:hover .about-link
+{
+    color: rgb(0, 0, 0);
+}
+/* --------------------------------------------- */
+
+/* Portfolio------------------------------ */
+
+.port-header
+{
+    
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40;
+    font-weight: 1000;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+
+.port-line
+{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(172, 9, 9);
+    margin: auto;
+    margin-top: 3px;
+}
+
+.portfolio-parent
+{
+    margin-top: -50px;
+    height: 100hv;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    overflow: auto;
+}
+
+.port-1 ,.port-2,.port-3,.port-4,.port-5,.port-6
+{
+    float:left;
+    width: 270px;
+    height: 280px;
+    margin: 30px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+
+.port-1,.port-4
+{
+    margin-left: 300px;
+}
+
+.portfolio-parent img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-parent i
+{
+    margin-top: 140px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding-left: 15px;
+}
+.port-p
+{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(255, 255, 255) ;
+    text-transform: capitalize;
+}
+.port-overlay
+{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    opacity: 0;
+    position: absolute;
+}
+.port-1:hover .port-overlay
+{
+    opacity: 1;
+}
+.port-2:hover .port-overlay
+{
+    opacity: 1;
+}
+.port-3:hover .port-overlay
+{
+    opacity: 1;
+}
+.port-4:hover .port-overlay
+{
+    opacity: 1;
+}
+.port-5:hover .port-overlay
+{
+    opacity: 1;
+}
+.port-6:hover .port-overlay
+{
+    opacity: 1;
+}
+
+/* ------------------------------------------------- */
+
+/* Services------------------------------------------ */
+.service-parent
+{
+    width: 100%;
+    height: 100hv;
+    overflow: auto;
+}
+.service-1 ,.service-2,.service-3,.service-4,.service-5,.service-6
+{
+    float:left;
+    width: 330px;
+    height: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+.service-1
+{
+    margin-left: 200px;
+}
+.service-4
+{
+    margin-left: 200px;
+}
+.service-icon
+{
+   float: left;
+   margin:20px 20px;
+   font-size: xx-large;
+   color: rgb(197, 6, 6);
+}
+.service-p
+{
+    font-size: x-large;
+    font-weight: 900;
+}
+.service-1-1,.service-2-1,.service-3-1,.service-4-1,.service-5-1,.service-6-1
+{
+    margin-left: 75px;
+    padding: 5px;
+}
+.service-p2
+{
+    padding: 5px;
+    color: rgb(79, 79, 79);
+}
+.service-1:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-1:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-1:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-1:hover .service-p
+{
+    color:white;
+}
+.service-1:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+.service-2:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-2:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-2:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-2:hover .service-p
+{
+    color:white;
+}
+.service-2:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+.service-3:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-3:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-3:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-3:hover .service-p
+{
+    color:white;
+}
+.service-3:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+.service-4:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-4:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-4:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-4:hover .service-p
+{
+    color:white;
+}
+.service-4:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+.service-5:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-5:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-5:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-5:hover .service-p
+{
+    color:white;
+}
+.service-5:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+.service-6:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+    background-color:rgb(129, 0, 0);
+    z-index: -1;
+    transition: 0.7s;
+    border-radius: 10px;
+
+}
+.service-6:hover:after
+{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+.service-6:hover .service-p2
+{
+    color: rgb(255, 255, 255);
+}
+.service-6:hover .service-p
+{
+    color:white;
+}
+.service-6:hover .service-icon
+{
+    color:rgb(0, 0, 0);
+}
+
+/* /////////////////////////////////////////////////////// */
+
+/* second section in services//////////////////////////// */
+
+.service-parent-2
+{
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+.service-2-header
+{
+    text-align: initial;
+    font-size: 40;
+    font-weight: 1000;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+
+}
+
+.service-2-line
+{
+    width: 80px;
+    height: 3px;
+    background-color: rgb(172, 9, 9);
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+.service-image
+{
+    background-image: url(../images/AC-Shadows-boxshot.avif);
+    height: 450px;
+    width: 360px;
+    left: 60%;
+    position: absolute;
+    background-size: cover;
+    margin-top: 140px;
+}
+.service-content
+{
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    width: 35%;
+}
+.service-2-icon
+{
+    color: rgb(0, 0, 0);
+}
+.service-2-p
+{
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+.service-list 
+{
+    position: absolute;
+    left: 69%;
+    top: 85%;
+}
+
+.service-list ~ ul
+{
+    list-style: circle; 
+}
+
+.service-li 
+{
+    font-size: 50px; 
+    color: rgb(0, 0, 0);
+}
+.circle1,.circle2,.circle3
+{
+    display: inline-block;
+    padding-left: 35px;
+}
+.service-ul:hover .service-li
+{
+    color: red;
+}
+
+.service-parent-2 i
+{
+    color: rgb(129, 0, 0);
+    margin-right: 10px;
+}
+/* ///////////////////////////////////////////// */
+
+/* Background image 1 //////////////////////////*/
+.bg-image-1
+{
+    margin-top: 120px;
+    background-image: url(../images/aesthetic-super-mario-colorful-desktop-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.image-container
+{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.bg-image-content,.bg-image-content1,.bg-image-content2,.bg-image-content3,.bg-image-content4
+{
+    float: left;
+    margin: 100px;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+.bg-image-p,.bg-image-p2
+{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.image-container i
+{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+/* //////////////////////////////////////// */
+
+/* prices section///////////////////////// */
+
+.prices-header
+{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 40;
+    font-weight: 1000;
+    text-transform: capitalize;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.prices-line
+{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(172, 9, 9);
+    margin: auto;
+    margin-top: 3px;
+}
+
+.prices-container
+{
+    height: 100hv;
+    width: 100%;
+    overflow: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.prices-div-1
+{
+    float: left;
+    color: rgb(0, 0, 0);
+    width: 340px;
+    height: 380px;
+    margin-left: 200px;
+    border: solid black 3px ;
+    position: relative;
+    border-radius: 20px;
+}
+
+.prices-div-2
+{
+    float: left;
+    color: rgb(0, 0, 0);
+    width: 340px;
+    height: 380px;
+    border: solid black 3px ;
+    position: relative;
+    border-radius: 20px;
+    margin:0 50px ;
+
+}
+
+.prices-div-3
+{
+    float: left;
+    color: rgb(0, 0, 0);
+    width: 340px;
+    height: 380px;
+    border: solid black 3px ;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.prices-content
+{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(196, 0, 0);
+    margin: auto;
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prices-p
+{
+    margin-top: 20px;
+}
+
+.prices-content-p
+{
+    font-weight:900;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.prices-content-p-2
+{
+   
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.prices-title
+{
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+.prices-btn
+{
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(220, 0, 0);
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.prices-div:after
+{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 1;
+    transition: 0.5s;
+    position: absolute;
+    background-color: rgb(42, 36, 36);
+    z-index: -1;
+}
+
+.prices-div:hover:after
+{
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    content: "";
+}
+
+.prices-div:hover .prices-title
+{
+    color: rgb(219, 0, 0);
+}
+
+.prices-div:hover .prices-content
+{
+    border-color: rgb(247, 2, 2);
+}
+
+.prices-div button:hover
+{
+    background-color: red;
+    color: white;
+}
+/* .prices-div:hover 
+{
+    color: white;
+} */
+
+/* //////////////////////////////////////////// */
+
+/* background-image-2 */
+.bg-image-2
+{
+    margin-top: 200px;
+    background-image: url(../images/assassins-creed-aesthetic-desktop-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.bg-image-container
+{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.bg-image-2-div,.bg-image-2-div-2
+{
+    float: left;
+    margin: 100px;
+    width: 400px;
+    color: white;
+}
+.bg-image-2-content
+{
+    background-image: url(../images/tim3.jpg);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    background-size: cover;
+}
+.bg-image-2-p-3
+{
+    margin-top: 35px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.bg-image-2-p-1
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 85px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+
+}
+.bg-image-2-p-2
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 85px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+
+}
+.bg-image-2-content-2
+{
+    background-image: url(../images/donald1.jpg);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    background-size: cover;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+/* Team Section//////////////////////////////////////////// */
+
+.team-container
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.team-content
+{
+   margin-top: 60;
+   height: 480px;
+}
+
+.team-item
+{
+    float: left;
+    width: 30%;
+    height: 400px;
+    border: 2px rgb(110, 0, 0) solid ;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+.team-item-2
+{
+    margin: 0 5%;
+}
+
+.team-image
+{
+    position: relative;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.team-image img
+{
+    width: 100%;
+    height: 250;
+}
+
+.team-overlay
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.207);
+    opacity: 0;
+    z-index: 2;
+}
+
+.team-overlay a
+{
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+}
+
+.team-overlay a i
+{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+}
+.team-item:hover .team-overlay
+{
+    opacity: 1;
+}
+
+.team-info
+{
+    text-align: center;
+    
+}
+
+.team-info h3
+{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 20px;
+    color: rgb(46, 46, 46);
+    text-transform: uppercase;
+}
+
+.team-info p
+{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(47, 47, 47);
+}
+
+.team-item::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.team-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.team-item:hover h3
+{
+    color: rgb(0, 0, 0);
+}
+.team-item:hover p
+{
+    color: rgb(0, 0, 0);
+}
+
+/* /////////////////////////////////////// */
+
+/* Recent news section/////////////////////////////// */
+
+.news-container
+{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+
+.news-content
+{
+    margin-top: 60px;
+}
+
+.news-item
+{
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+
+.news-item-2
+{
+    margin: 0px 5%;
+}
+
+.news-image
+{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+.news-info a
+{
+   color: rgb(231, 13, 13);
+   padding-left: 5px;
+}
+.news-image img
+{
+    width: 100%;
+    height: 200px;
+}
+
+.news-info
+{
+    padding: 10px 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.news-info p
+{
+    margin:15px 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+
+.news-info h3 
+{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.news-item::after
+{
+    content: "";
+    top:0;
+    width: 100%;
+    left: 0;
+    height: 0;
+    transition: 0.5s;
+    position: absolute;
+    background-color: rgb(129, 0, 0);
+    opacity: 0.7;
+    z-index: -1;
+}
+.news-item:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.news-item:hover .news-info h3
+{
+    color: white;
+}
+.news-item:hover .news-info p
+{
+    color: rgb(0, 0, 0);
+}
+.news-item:hover .news-info a
+{
+    color: rgb(0, 0, 0);
+}
+.news-item:hover .news-info span
+{
+    color: rgb(208, 0, 0);
+}
+/* ////////////////////////////////////// */
+
+/* last section ///////////////////////////// */
+
+.footer
+{
+    width: 100%;
+    height: 330px;
+    background-color: rgb(113, 68, 68);
+    margin-top: 100px;
+    position: relative;
+}
+
+.footer-container
+{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: auto;
+}
+
+.footer img
+{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.footer i
+{
+    margin:20px 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.footer
+{
+    color: white;
+}
+
+.footer i:hover
+{
+    background-color: rgb(183, 0, 0);
+}
+
